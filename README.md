@@ -20,26 +20,26 @@ The **Airbnb Clone** is a scalable, secure backend solution designed to power a 
 
 ## **🛠️ Features Overview**
 
-#1. **API Documentation** 
+1. **API Documentation** 
     - **OpenAPI Standard**: The backend APIs are documented using the OpenAPI standard to ensure clarity and ease of integration.
     - **Django REST Framework**: Provides a comprehensive RESTful API for handling CRUD operations on user and property data.
     - **GraphQL**: Offers a flexible and efficient query mechanism for interacting with the backend.
-#2. **User Authentication**
+2. **User Authentication**
     - **Endpoints**: /users/, /users/{user_id}/
     - **Features**: Register new users, authenticate, and manage user profiles.
-#3.  **Property Management**
+3.  **Property Management**
     - **Endpoints**: /properties/, /properties/{property_id}/
     - **Features**: Create, update, retrieve, and delete property listings.
-#4. **Booking System**
+4. **Booking System**
     - **Endpoints**: /bookings/, /bookings/{booking_id}/
     - **features**: Make, update, and manage bookings, including check-in and check-out details.
-#5. **Payment Processing**
+5. **Payment Processing**
     - **Endpoints**:  /payments/
     - **Features**: Handle payment transactions related to bookings.
-#6. **Review**
+6. **Review**
     - **Endpoints**: /reviews/, /reviews/{review_id}/
     - **Features**: Post and manage reviews for properties.
-#7. **Data Optimizations**
+7. **Data Optimizations**
     - **Indexing**: Implement indexes for fast retrieval of frequently accessed data.
     - **Caching**: Use caching strategies to reduce database load and improve performance.
     
