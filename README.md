@@ -91,7 +91,7 @@ Relational database design is essential for managing the platform’s data scala
 
 ----
 
-# 4. 🛠️ Features breakdown
+# 4. 🛠️ Feature breakdown
    This outlines the main features of the Backend platform and explains each role in delivering a robust, service-friendly vacation rental experience.
 
 #### User Authentication
