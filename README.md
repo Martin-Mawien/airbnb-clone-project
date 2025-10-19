@@ -29,14 +29,14 @@ The **Airbnb Clone** is a scalable, secure backend solution designed to power a 
 
 ## 2. ⚙️ **Technology Stack Overview**
 
-**Django:** Web framework used for building the RESTful API It provides built-in components for user authentication, database management, and templating.
-**Django REST Framework:** Provides tools for creating and managing RESTful APIs by providing serialization, authentication, viewsets, and pagination out of the box, allowing clean and maintainable API endpoints.
-**PostgreSQL:** A powerful relational database used for data storage.
-**GraphQL:** Allows for flexible and efficient querying of data.
-**Celery:** For handling asynchronous tasks such as sending notifications or processing payments.
-**Redis:** Used for caching and session management.
-**Docker:** A Containerization tool for consistent development and deployment environments.
-**CI/CD Pipelines:** Automated pipelines for testing and deploying code changes.
+  - **Django:** Web framework used for building the RESTful API It provides built-in components for user authentication, database management, and templating.
+  - **Django REST Framework:** Provides tools for creating and managing RESTful APIs by providing serialization, authentication, viewsets, and pagination out of the box, allowing clean and maintainable API endpoints.
+  - **PostgreSQL:** A powerful relational database used for data storage.
+  - **GraphQL:** Allows for flexible and efficient querying of data.
+  - **Celery:** For handling asynchronous tasks such as sending notifications or processing payments.
+  - **Redis:** Used for caching and session management.
+  - **Docker:** A Containerization tool for consistent development and deployment environments.
+  - **CI/CD Pipelines:** Automated pipelines for testing and deploying code changes.
 
 ----
 
@@ -92,12 +92,6 @@ Relational database design is essential for managing the platform’s data scala
 
 ----
 
-## 📈 API Documentation Overview
-   - **REST API**: Detailed documentation available through the OpenAPI standard, including endpoints for users, properties, bookings, and payments.
-   - **GraphQL API**: Provides a flexible query language for retrieving and manipulating data.
-
-----
-
 ## 4. 🛠️ Features breakdown
    This outlines the main features of the Backend platform and explains each role in delivering a robust, ser friendly vocation rentals experience.
 
@@ -123,10 +117,13 @@ Relational database design is essential for managing the platform’s data scala
    This will give the platform administrators the availability into the site activity, Revenue, Bookings, and users issues through a secure dashboard. Admin tools are essential for the ongoing sites’ health, fraud detections, supporting user’s need and compliance.
 Each feature works together to provide a secure, seamless, and responsive experience for all the users on this platform.
 
-
-## 5. API Security
+## 5. 📈 API Security
 
 **API Security** This section outlines the crucial security measures implemented for the Airbnb-clone-project backend. It explains their importance in protecting user data, securing financial transactions, and maintaining system trustworthiness.
+
+   - **REST API**: Detailed documentation available through the OpenAPI standard, including endpoints for users, properties, bookings, and payments.
+   - **GraphQL API**: Provides a flexible query language for retrieving and manipulating data.
+--
 
 **Key Security Measures**
 
@@ -172,4 +169,4 @@ Each feature works together to provide a secure, seamless, and responsive experi
      It will be used for testing and for building consistent containers across the deployment. and production. 
 
 Using this **CI/CD Pipeline**, the project will benefit safely, faster, and even more reliable development cycles to deliver key features and fixes to users with confidence. 
-
+----
