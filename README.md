@@ -92,8 +92,27 @@ Relational database design is essential for managing the platform’s data scala
 ----
 
 # 4. 🛠️ Features breakdown
-   This outlines the main features of the Backend platform and explains each role in delivering a robust, service-friendly vacation rentals experience.
+   This outlines the main features of the Backend platform and explains each role in delivering a robust, service-friendly vacation rental experience.
 
+#### User Authentication
+  **Endpoints:** /users/, /users/{user_id}/
+  **Features:** Register new users, authenticate, and manage user profiles.
+#### Property Management
+  **Endpoints:** /properties/, /properties/{property_id}/
+  **Features:** Create, update, retrieve, and delete property listings.
+#### Booking System
+  **Endpoints:** /bookings/, /bookings/{booking_id}/
+  **Features:** Make, update, and manage bookings, including check-in and check-out details.
+#### Payment Processing
+  **Endpoints:** /payments/
+  **Features:** Handle payment transactions related to bookings.
+#### Review System
+  **Endpoints:** /reviews/, /reviews/{review_id}/
+  **Features:** Post and manage reviews for properties.
+#### Database Optimizations
+  **Indexing:** Implement indexes for fast retrieval of frequently accessed data.
+  **Caching:** Use caching strategies to reduce database load and improve performance.
+  
   - **User Management:**
    It handles the secure user registration, profile management, authentication, the roles admin, and guest host. Managing identity and permissions, the features ensure that only authorized users can access and interact with the platform, which forms the backbone of all the user-specific activities.
 
@@ -115,25 +134,6 @@ Relational database design is essential for managing the platform’s data scala
   - **Admin and Analytics Dashboard:**
    This will give the platform administrators access to the site activity, Revenue, Bookings, and user issues through a secure dashboard. Admin tools are essential for the ongoing sites’ health, fraud detection, supporting users’ needs, and compliance.
 Each feature works together to provide a secure, seamless, and responsive experience for all users on this platform.
-
-#### 1. User Authentication
-**Endpoints:** /users/, /users/{user_id}/
-**Features:** Register new users, authenticate, and manage user profiles.
-#### 2. Property Management
-**Endpoints:** /properties/, /properties/{property_id}/
-**Features:** Create, update, retrieve, and delete property listings.
-#### 3. Booking System
-**Endpoints:** /bookings/, /bookings/{booking_id}/
-**Features:** Make, update, and manage bookings, including check-in and check-out details.
-#### 4. Payment Processing
-**Endpoints:** /payments/
-**Features:** Handle payment transactions related to bookings.
-#### 5. Review System
-**Endpoints:** /reviews/, /reviews/{review_id}/
-**Features:** Post and manage reviews for properties.
-#### 6. Database Optimizations
-**Indexing:** Implement indexes for fast retrieval of frequently accessed data.
-**Caching:** Use caching strategies to reduce database load and improve performance.
 
 ----
 
