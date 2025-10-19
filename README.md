@@ -93,29 +93,52 @@ Relational database design is essential for managing the platform’s data scala
 ----
 
 ## 4. 🛠️ Features breakdown
-   This outlines the main features of the Backend platform and explains each role in delivering a robust, ser friendly vocation rentals experience.
+   This outlines the main features of the Backend platform and explains each role in delivering a robust, service-friendly vacation rentals experience.
 
   - **User Management:**
-   It handles the secure suer registration, profile management, authentication, the roles admin, guest host. Managing identity and permissions, the features ensure that’s only an authorized user-s can access and interact with the platform, which form the backbore of all the user specific activities.
+   It handles the secure user registration, profile management, authentication, the roles admin, and guest host. Managing identity and permissions, the features ensure that only authorized users can access and interact with the platform, which forms the backbone of all the user-specific activities.
 
   - **Property Management:**
-   This allows the hosts lists, to updates, and manage their properties, including descriptions, uploading photos, Pricing, and the availability. Accurate propert data is essential for a smooth booking experience and ensures guest have clear, up to dat information for the decision making 
+   This allows the hosts list, to update and manage their properties, including descriptions, uploading photos, Pricing, and availability. Accurate property data is essential for a smooth booking experience and ensures guests have clear, up-to-date information for decision-making 
 
   - **Booking System:**
-   It manage the entire Reservation process, from the date selection and availability checks to confirmation, Cancellation-s, and the booking status updates. The feature is critical for delivering the reliable, conflict-free reservations while maintaining a clear record of all transactions.
+   It manages the entire Reservation process, from date selection and availability checks to confirmation, cancellations, and booking status updates. The feature is critical for delivering reliable, conflict-free reservations while maintaining a clear record of all transactions.
 
   - **Payment Integration:**
-   It provides a secure payment process, associating transactions with the booking and handling confirmations, and status updates. Seamles payment integration protections both the guests and the host from fraud, streamlines the booking process, and adds to user trust.
+   It provides a secure payment process, associating transactions with the booking and handling confirmations and status updates. Seamless payment integration protects both the guests and the host from fraud, streamlines the booking process, and adds to user trust.
 
   - **Review System:**
-   This enables guests to rate properties and leaves written feedback, while host can view ratings for quality improvements. The feature builds transparency and accountability across the platform, helping future guests to make informed choices and encouraging high standards among the hosts.
+   This enables guests to rate properties and leave written feedback, while hosts can view ratings for quality improvements. The feature builds transparency and accountability across the platform, helping future guests to make informed choices and encouraging high standards among the hosts.
 
   - **Notifications:**
-   To send automated emails and in- apps messages for bookings, reminders, payment, and status changes. Clear, timely communication to keep users informed and engaged, minimizing confusion and missed opportunities.
+   To send automated emails and in-app messages for bookings, reminders, payment, and status changes. Clear, timely communication to keep users informed and engaged, minimizing confusion and missed opportunities.
 
   - **Admin and Analytics Dashboard:**
-   This will give the platform administrators the availability into the site activity, Revenue, Bookings, and users issues through a secure dashboard. Admin tools are essential for the ongoing sites’ health, fraud detections, supporting user’s need and compliance.
-Each feature works together to provide a secure, seamless, and responsive experience for all the users on this platform.
+   This will give the platform administrators access to the site activity, Revenue, Bookings, and user issues through a secure dashboard. Admin tools are essential for the ongoing sites’ health, fraud detection, supporting users’ needs, and compliance.
+Each feature works together to provide a secure, seamless, and responsive experience for all users on this platform.
+
+# 1. API Documentation
+  - **OpenAPI Standard:** The backend APIs are documented using the OpenAPI standard to ensure clarity and ease of integration.
+  - **Django REST Framework:** Provides a comprehensive RESTful API for handling CRUD operations on user and property data.
+  - **GraphQL:** Offers a flexible and efficient query mechanism for interacting with the backend.
+# 2. User Authentication
+**Endpoints:** /users/, /users/{user_id}/
+**Features:** Register new users, authenticate, and manage user profiles.
+# 3. Property Management
+**Endpoints:** /properties/, /properties/{property_id}/
+**Features:** Create, update, retrieve, and delete property listings.
+# 4. Booking System
+**Endpoints:** /bookings/, /bookings/{booking_id}/
+**Features:** Make, update, and manage bookings, including check-in and check-out details.
+# 5. Payment Processing
+**Endpoints:** /payments/
+**Features:** Handle payment transactions related to bookings.
+# 6. Review System
+**Endpoints:** /reviews/, /reviews/{review_id}/
+**Features:** Post and manage reviews for properties.
+# 7. Database Optimizations
+**Indexing:** Implement indexes for fast retrieval of frequently accessed data.
+**Caching:** Use caching strategies to reduce database load and improve performance.
 
 ----
 
