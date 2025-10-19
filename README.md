@@ -117,14 +117,15 @@ Relational database design is essential for managing the platform’s data scala
    This will give the platform administrators the availability into the site activity, Revenue, Bookings, and users issues through a secure dashboard. Admin tools are essential for the ongoing sites’ health, fraud detections, supporting user’s need and compliance.
 Each feature works together to provide a secure, seamless, and responsive experience for all the users on this platform.
 
+----
+
 ## 5. 📈 API Security
 
 **API Security** This section outlines the crucial security measures implemented for the Airbnb-clone-project backend. It explains their importance in protecting user data, securing financial transactions, and maintaining system trustworthiness.
 
    - **REST API**: Detailed documentation available through the OpenAPI standard, including endpoints for users, properties, bookings, and payments.
    - **GraphQL API**: Provides a flexible query language for retrieving and manipulating data.
---
-
+-
 **Key Security Measures**
 
    - **Authentication**:
