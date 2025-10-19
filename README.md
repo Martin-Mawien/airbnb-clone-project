@@ -7,8 +7,7 @@
 The **Airbnb Clone** is a scalable, secure backend solution designed to power a comprehensive property rental and booking platform inspired by **Airbnb**. Built with **Django** and **Django REST Framework**, **PostgreSQL**, it provides **RESTful** and **GraphQL APIs**, as well as **Celery** and **Redis**, **Docker**, and **CI/CD Pipelines** for managing users, properties, bookings, payments, and reviews.  
 
 ------
-
-## **🏆 Project Goals**
+# **🏆 Project Goals**
 
 **User Management**: Implement a secure system for user registration, authentication, and profile management.
 **Property Management**: Develop features for property listing creation, updates, and retrieval.
@@ -19,7 +18,7 @@ The **Airbnb Clone** is a scalable, secure backend solution designed to power a 
 
 ----
 
-## 1.  👥 **Team Roles**
+# 1.  👥 **Team Roles**
   - **Backend Developer**: Responsible for implementing API endpoints, database schemas, and business logic.
   - **Database Administrator**: Manages database design, indexing, and optimizations.
   - **DevOps Engineer**: Handles deployment, monitoring, and scaling of the backend services.
@@ -27,7 +26,7 @@ The **Airbnb Clone** is a scalable, secure backend solution designed to power a 
 
 ----
 
-## 2. ⚙️ **Technology Stack Overview**
+# 2. ⚙️ **Technology Stack Overview**
 
   - **Django:** Web framework used for building the RESTful API It provides built-in components for user authentication, database management, and templating.
   - **Django REST Framework:** Provides tools for creating and managing RESTful APIs by providing serialization, authentication, viewsets, and pagination out of the box, allowing clean and maintainable API endpoints.
@@ -40,7 +39,7 @@ The **Airbnb Clone** is a scalable, secure backend solution designed to power a 
 
 ----
 
-## 3. **Database Design**
+# 3. **Database Design**
 
 Relational database design is essential for managing the platform’s data scalability, functionality, and integrity.
 
@@ -92,7 +91,7 @@ Relational database design is essential for managing the platform’s data scala
 
 ----
 
-## 4. 🛠️ Features breakdown
+# 4. 🛠️ Features breakdown
    This outlines the main features of the Backend platform and explains each role in delivering a robust, service-friendly vacation rentals experience.
 
   - **User Management:**
@@ -117,32 +116,28 @@ Relational database design is essential for managing the platform’s data scala
    This will give the platform administrators access to the site activity, Revenue, Bookings, and user issues through a secure dashboard. Admin tools are essential for the ongoing sites’ health, fraud detection, supporting users’ needs, and compliance.
 Each feature works together to provide a secure, seamless, and responsive experience for all users on this platform.
 
-# 1. API Documentation
-  - **OpenAPI Standard:** The backend APIs are documented using the OpenAPI standard to ensure clarity and ease of integration.
-  - **Django REST Framework:** Provides a comprehensive RESTful API for handling CRUD operations on user and property data.
-  - **GraphQL:** Offers a flexible and efficient query mechanism for interacting with the backend.
-# 2. User Authentication
+#### 1. User Authentication
 **Endpoints:** /users/, /users/{user_id}/
 **Features:** Register new users, authenticate, and manage user profiles.
-# 3. Property Management
+#### 2. Property Management
 **Endpoints:** /properties/, /properties/{property_id}/
 **Features:** Create, update, retrieve, and delete property listings.
-# 4. Booking System
+#### 3. Booking System
 **Endpoints:** /bookings/, /bookings/{booking_id}/
 **Features:** Make, update, and manage bookings, including check-in and check-out details.
-# 5. Payment Processing
+#### 4. Payment Processing
 **Endpoints:** /payments/
 **Features:** Handle payment transactions related to bookings.
-# 6. Review System
+#### 5. Review System
 **Endpoints:** /reviews/, /reviews/{review_id}/
 **Features:** Post and manage reviews for properties.
-# 7. Database Optimizations
+#### 6. Database Optimizations
 **Indexing:** Implement indexes for fast retrieval of frequently accessed data.
 **Caching:** Use caching strategies to reduce database load and improve performance.
 
 ----
 
-## 5. 📈 API Security
+# 5. 📈 API Security
 
 **API Security** This section outlines the crucial security measures implemented for the Airbnb-clone-project backend. It explains their importance in protecting user data, securing financial transactions, and maintaining system trustworthiness.
 
@@ -173,7 +168,7 @@ Each feature works together to provide a secure, seamless, and responsive experi
 
 ----
 
-## 6. CI/CD Pipeline
+# 6. CI/CD Pipeline
 **A CI/CD pipeline** integration and continuous deployment pipeline is a series of automated processes that enable the team to build and deploy code efficiently and reliably. The integration of codes changes automatically, runs tests, and deploys applications without manual intervention. The automation will speed development and reduce errors, and maintain the highest quality throughout the lifecycle of software.
    - **Consistency**:
      To automate testing and deployment, ensure each code change is tested the same way, and minimize manual errors.
