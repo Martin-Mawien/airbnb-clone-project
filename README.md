@@ -5,7 +5,7 @@
 ## 🚀 **Objective**
    The **Airbnb Clone** is a scalable, secure backend solution designed to power a comprehensive property rental and booking platform inspired by **Airbnb**. Built with **Django** and **Django REST Framework**, **PostgreSQL**, it provides **RESTful** and **GraphQL APIs**, as well as **Celery** and **Redis**, **Docker**, and **CI/CD Pipelines** for managing users, properties, bookings, payments, and reviews.  
 
-----
+------
 
 ## **🏆 Project Goals**
 1.    **User Management**: Implement a secure system for user registration, authentication, and profile management.
@@ -37,51 +37,50 @@
 
 ----
 
-3. ## **Database Design**
+3. # **Database Design**
 
    Relational database design is essential for managing the platform’s data scalability, functionality, and integrity.
+   **The key entities and the key fields**
+1. # Users
+- Id (primary key)
+- Name
+- Email address
+- Role (Host, Admin, Guest)
+- Created_at
+  The relationship: each user can own multiple properties and create multiple bookings.
 
-**   **The key entities and the key fields**
-# 1. Users
-   - Id (primary key)
-   - Name
-   - Email address
-   - Role (Host, Admin, Guest)
-   - Created_at
-   The relationship: each user can own multiple properties and create multiple bookings.
+2. # Properties
+- Id (primary key)
+- Owner_id (foreign key to users)
+- Title
+- Location
+- Price
+  Relations: Each property is owned by only one user but can have many bookings and reviews.
 
-# 2. Properties
-   - Id (primary key)
-   - Owner_id (foreign key to users)
-   - Title
-   - Location
-   - Price
-   Relations: Each property is owned by only one user but can have many bookings and reviews.
+3. # Bookings
+- Id (Primary Key)
+- User_id (Foreign Key to Users)
+- Property_id (Foreign Key to Properties)
+- Check_in_date
+- Check_out_date
+- Status (pending, confirmed, canceled)
+  The relationship between each booking is linked to one user and opens one property. A user can make many bookings, and a property can be booked many times.
 
-# 3. Bookings
-   - Id (Primary Key)
-   - User_id (Foreign Key to Users)
-   - Property_id (Foreign Key to Properties)
-   - Check_in_date
-   - Check_out_date
-   - tatus (pending, confirmed, canceled)
-   The relationship between each booking is linked to one user and opens one property. A user can make many bookings, and a property can be booked many times.
+4. # Payment
+- Id (primary key)
+- Booking_id (foreign to bookings)
+- Amount
+- Status (Paid, Failed, Refunded)
+- Payment_date
+  The relationship between each payment is linked to the booking. Typically, each booking has one payment record. 
 
-# 4. Payment
-   - Id (primary key)
-   - Booking_id (foreign to bookings)
-   - Amount
-   - Status (Paid, Failed, Refunded)
-   - Payment_date
-   The relationship between each payment is linked to the booking. Typically, each booking has one payment record. 
-
-# 5. Reviews
-   - Id (primary Key)
-	- User_id (foreign key to users)
-	- Property_id (foreign to properties)
-	- Rating
-	- Comment
-   The relationship: the review is written by each user for a property. Multiple users can review a property, and users can leave multiple reviews for different properties.
+5. # Reviews
+- Id (primary Key)
+- User_id (foreign key to users)
+- Property_id (foreign to properties)
+- Rating
+- Comment
+  The relationship: the review is written by each user for a property. Multiple users can review a property, and users can leave multiple reviews for different properties.
 
 # The list of the relationship entity:
    - Users: one-to-many. Each user owns many properties.
@@ -99,74 +98,38 @@
 
 ----
 
-## 📌 Endpoints Overview
-- **REST API Endpoints**:
-  1. **Users**  
-     GET /users/ - List all users
-     POST /users/ - Create a new user
-     GET /users/{user_id}/ - Retrieve a specific user
-     PUT /users/{user_id}/ - Update a specific user
-     DELETE /users/{user_id}/ - Delete a specific user
-       
-  2. **Properties**
-     GET /properties/ - List all properties
-     POST /properties/ - Create a new property
-     GET /properties/{property_id}/ - Retrieve a specific property
-     PUT /properties/{property_id}/ - Update a specific property
-     DELETE /properties/{property_id}/ - Delete a specific property
-    
-  3. **Bookings**
-     GET /bookings/ - List all bookings
-     POST /bookings/ - Create a new booking
-     GET /bookings/{booking_id}/ - Retrieve a specific booking
-     PUT /bookings/{booking_id}/ - Update a specific booking
-     DELETE /bookings/{booking_id}/ - Delete a specific booking
-  
-  4. **Payments**
-     POST /payments/ - Process a payment
-  
-  5. **Reviews**
-     GET /reviews/ - List all reviews
-     POST /reviews/ - Create a new review
-     GET /reviews/{review_id}/ - Retrieve a specific review
-    PUT /reviews/{review_id}/ - Update a specific review
-    DELETE /reviews/{review_id}/ - Delete a specific review
-
-----
-
 4. ## 🛠️ Features breakdown
+   This outlines the main features of the Backend platform and explains each role in delivering a robust, ser friendly vocation rentals experience.
 
-This outlines the main features of the Backend platform and explains each role in delivering a robust, ser friendly vocation rentals experience.
-
-# - User Management:
+	**- User Management:**
    It handles the secure suer registration, profile management, authentication, the roles admin, guest host. Managing identity and permissions, the features ensure that’s only an authorized user-s can access and interact with the platform, which form the backbore of all the user specific activities.
 
-# - Property Management:
+	**- Property Management:**
    This allows the hosts lists, to updates, and manage their properties, including descriptions, uploading photos, Pricing, and the availability. Accurate propert data is essential for a smooth booking experience and ensures guest have clear, up to dat information for the decision making 
 
-# - Booking System:
+	**- Booking System:**
    It manage the entire Reservation process, from the date selection and availability checks to confirmation, Cancellation-s, and the booking status updates. The feature is critical for delivering the reliable, conflict-free reservations while maintaining a clear record of all transactions.
 
-# - Payment Integration:
+	**- Payment Integration:**
    It provides a secure payment process, associating transactions with the booking and handling confirmations, and status updates. Seamles payment integration protections both the guests and the host from fraud, streamlines the booking process, and adds to user trust.
 
-# - Review System:
+	**- Review System:**
    This enables guests to rate properties and leaves written feedback, while host can view ratings for quality improvements. The feature builds transparency and accountability across the platform, helping future guests to make informed choices and encouraging high standards among the hosts.
 
-# - Notifications:
+	**- Notifications:**
    To send automated emails and in- apps messages for bookings, reminders, payment, and status changes. Clear, timely communication to keep users informed and engaged, minimizing confusion and missed opportunities.
 
-# - Admin and Analytics Dashboard:
+	**- Admin and Analytics Dashboard:**
    This will give the platform administrators the availability into the site activity, Revenue, Bookings, and users issues through a secure dashboard. Admin tools are essential for the ongoing sites’ health, fraud detections, supporting user’s need and compliance.
 Each feature works together to provide a secure, seamless, and responsive experience for all the users on this platform.
 
-----
 
-5. ## API Security Overview
+6. ## API Security
 
 **API Security** This section outlines the crucial security measures implemented for the Airbnb-clone-project backend. It explains their importance in protecting user data, securing financial transactions, and maintaining system trustworthiness.
 
 **Key Security Measures**
+
    - **Authentication**:
      Enforces strict verification of user identity using robust methods (JWT tokens, OAuth2, or session-based auth). All sensitive API endpoints require authentication to prevent unauthorized access.
 
@@ -186,29 +149,6 @@ Each feature works together to provide a secure, seamless, and responsive experi
 
    - **Audit Logging & Monitoring**:
      Auth events, payment transactions, and admin actions are logged and monitored for suspicious behavior.
-
-     1. **API Documentation** 
-    -  **OpenAPI Standard**: The backend APIs are documented using the OpenAPI standard to ensure clarity and ease of integration.
-    -  **Django REST Framework**: Provides a comprehensive RESTful API for handling CRUD operations on user and property data.
-    -  **GraphQL**: Offers a flexible and efficient query mechanism for interacting with the backend.
-2. **User Authentication**
-    -  **Endpoints**: /users/, /users/{user_id}/
-    -  **Features**: Register new users, authenticate, and manage user profiles.
-3.  **Property Management**
-    -  **Endpoints**: /properties/, /properties/{property_id}/
-    -  **Features**: Create, update, retrieve, and delete property listings. 
-4. **Booking System**
-    -  **Endpoints**: /bookings/, /bookings/{booking_id}/
-    -  **features**: Make, update, and manage bookings, including check-in and check-out details.   
-5. **Payment Processing**
-    -  **Endpoints**:  /payments/
-    -  **Features**: Handle payment transactions related to bookings.  
-6. **Review**
-    -  **Endpoints**: /reviews/, /reviews/{review_id}/
-    -  **Features**: Post and manage reviews for properties.    
-7. **Data Optimizations**
-    -  **Indexing**: Implement indexes for fast retrieval of frequently accessed data.
-    -  **Caching**: Use caching strategies to reduce database load and improve performance.
 
 ----
 
