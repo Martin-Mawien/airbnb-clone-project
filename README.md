@@ -45,7 +45,7 @@ The **Airbnb Clone** is a scalable, secure backend solution designed to power a 
 Relational database design is essential for managing the platform’s data scalability, functionality, and integrity.
 
 **The key entities and the key fields**
-### 1. Users
+  ### 1. Users
 - Id (primary key)
 - Name
 - Email address
@@ -59,7 +59,7 @@ Relational database design is essential for managing the platform’s data scala
 - Location
 - Price
   Relations: Each property is owned by only one user but can have many bookings and reviews.
-### 3. Bookings
+  ### 3. Bookings
 - Id (Primary Key)
 - User_id (Foreign Key to Users)
 - Property_id (Foreign Key to Properties)
@@ -67,14 +67,14 @@ Relational database design is essential for managing the platform’s data scala
 - Check_out_date
 - Status (pending, confirmed, canceled)
   The relationship between each booking is linked to one user and opens one property. A user can make many bookings, and a property can be booked many times.
-### 4. Payment
+  ### 4. Payment
 - Id (primary key)
 - Booking_id (foreign to bookings)
 - Amount
 - Status (Paid, Failed, Refunded)
 - Payment_date
   The relationship between each payment is linked to the booking. Typically, each booking has one payment record. 
-### 5. Reviews
+  ### 5. Reviews
 - Id (primary Key)
 - User_id (foreign key to users)
 - Property_id (foreign to properties)
@@ -82,7 +82,7 @@ Relational database design is essential for managing the platform’s data scala
 - Comment
   The relationship: the review is written by each user for a property. Multiple users can review a property, and users can leave multiple reviews for different properties.
 
-# The list of the relationship entity:
+  # The list of the relationship entity:
    - Users: one-to-many. Each user owns many properties.
    - User-bookings: One-to-many, a user creates many bookings.
    - Property-bookings: a one-to-many property can book multiple times.
@@ -95,25 +95,25 @@ Relational database design is essential for managing the platform’s data scala
 ## 4. 🛠️ Features breakdown
    This outlines the main features of the Backend platform and explains each role in delivering a robust, ser friendly vocation rentals experience.
 
-**- User Management:**
+  - **User Management:**
    It handles the secure suer registration, profile management, authentication, the roles admin, guest host. Managing identity and permissions, the features ensure that’s only an authorized user-s can access and interact with the platform, which form the backbore of all the user specific activities.
 
-**- Property Management:**
+  - **Property Management:**
    This allows the hosts lists, to updates, and manage their properties, including descriptions, uploading photos, Pricing, and the availability. Accurate propert data is essential for a smooth booking experience and ensures guest have clear, up to dat information for the decision making 
 
-**- Booking System:**
+  - **Booking System:**
    It manage the entire Reservation process, from the date selection and availability checks to confirmation, Cancellation-s, and the booking status updates. The feature is critical for delivering the reliable, conflict-free reservations while maintaining a clear record of all transactions.
 
-**- Payment Integration:**
+  - **Payment Integration:**
    It provides a secure payment process, associating transactions with the booking and handling confirmations, and status updates. Seamles payment integration protections both the guests and the host from fraud, streamlines the booking process, and adds to user trust.
 
-**- Review System:**
+  - **Review System:**
    This enables guests to rate properties and leaves written feedback, while host can view ratings for quality improvements. The feature builds transparency and accountability across the platform, helping future guests to make informed choices and encouraging high standards among the hosts.
 
-**- Notifications:**
+  - **Notifications:**
    To send automated emails and in- apps messages for bookings, reminders, payment, and status changes. Clear, timely communication to keep users informed and engaged, minimizing confusion and missed opportunities.
 
-**- Admin and Analytics Dashboard:**
+  - **Admin and Analytics Dashboard:**
    This will give the platform administrators the availability into the site activity, Revenue, Bookings, and users issues through a secure dashboard. Admin tools are essential for the ongoing sites’ health, fraud detections, supporting user’s need and compliance.
 Each feature works together to provide a secure, seamless, and responsive experience for all the users on this platform.
 
