@@ -39,7 +39,7 @@ The **Airbnb Clone** is a scalable, secure backend solution designed to power a 
 
 ----
 
-# 3. **Database Design**
+# 3. 🏗 **Database Design**
 
 Relational database design is essential for managing the platform’s data scalability, functionality, and integrity.
 
@@ -94,68 +94,68 @@ Relational database design is essential for managing the platform’s data scala
 # 4. 🛠️ Feature Breakdown
    This outlines the main features of the Backend platform and explains each role in delivering a robust, service-friendly vacation rental experience.
   
-## 1. **User Management:**
+## 1. 👤 **User Management:**
 
   ** Description**
 It handles the secure user registration, profile management, authentication, the roles admin, and guest host. Managing identity and permissions, the features ensure that only authorized users can access and interact with the platform, which forms the backbone of all the user-specific activities.
 
-  **Features:** Register new users, authenticate, and manage user profiles (email/password, OAuth via Google, Apple, Fcebook)
+  **Features:** Register new users, authenticate, and manage user profiles (email/password, OAuth via Google, Apple, Facebook)
   - Login/Logout
   - Email & Phone verification
   - Two-Factor Authentication (2FA)
   - Password Reset / Recovery
-  - User Roles & Permissions (Guest, Host, Amin)
+  - User Roles & Permissions (Guest, Host, Admin)
   - Profile Management (Name, Avatar, Bio, contact Info)
   - Session Management (JWT, refresh tokens)
   - Profile Update, Deactivation & deletion
     
-## 2. **Property Management:**
+## 2. 🏠 **Property Management:**
 
    **Description:**
-Enable Hosts to create, Edit, and manage property listings, including descriptions, uploading photos, Pricing, and availability. To make the accurate property data that is essential for a smooth booking experience and ensures guests have clear, up-to-date information for decision-making.
+Enable Hosts to create, Edit, and manage property listings, including descriptions, uploading photos, Pricing, and availability. To make accurate property data that is essential for a smooth booking experience and ensures guests have clear, up-to-date information for decision-making.
 
   **Sub features**
-  - Add New Propert Listing
+  - Add New Property Listing
   - Upload Property Images & Videos (cloud Storage)
   - Edit / Delete Listings
-  - Set Pricing, Avaiability, and House Rules
+  - Set Pricing, Availability, and House Rules
   - Property Categories(Apartment, Villa, Cabin, Shared Room, Hotel, Guest House etc.)
   - Location & Map Integration (Google Maps API)
   - Amenities & Features (Wi-Fi, Parking, Kitchen, etc.)
   - Property Verification & Moderation
   - Search & Filter Listings
 
-## 3. **Booking System:**
+## 3. 📆 **Booking System:**
 
-   **Desciption:**
+   **Description:**
 Manage reservations, Scheduling, and availability in real-time. Allow users to book properties and manage reservations. It manages the entire Reservation process, from date selection and availability checks to confirmation, cancellations, and booking status updates. The feature is critical for delivering reliable, conflict-free reservations while maintaining a clear record of all transactions.
 
    **Sub features**
   - Create Booking Request
   - Availability Check Real-Time
   - Host Approval workflow (Instant or Manual Booking)
-  - Bookin Confirmation & Chec-n/Check-out Flow
+  - Booking Confirmation & Chec-n/Check-out Flow
   - Cancellation Policy (Flexible, Moderate, Strict)
   - Modify / Reschedule Booking
-  - Booking Hostory &b Status Tracking
+  - Booking History &b Status Tracking
   - Guest Count & Duration Validation
 
-## 5. **Payment Gateway Integration:**
+## 5. 💳 **Payment Gateway Integration:**
 
    **Description:**
 Handles all financial operations securely between guests, hosts, and the platform. It provides a secure payment process, associating transactions with the booking and handling confirmations and status updates. Seamless payment integration protects both the guests and the host from fraud, streamlines the booking process, and adds to user trust.
 
   **Sub features:**
-  - Payment Gatway Integration (PayPal / Stripe / M-Pasa API)
+  - Payment Gateway Integration (PayPal / Stripe / M-Pesa API)
   - Multi-Currency & Tax Support
-  - Secure Payment Processing (PCI Compliqance)
+  - Secure Payment Processing (PCI Compliance)
   - Split Payments (Host + Platform Cpmmission)
   - Refund & Dispute Resolution
   - Host Payouts (Scheduled Earnings)
   - Invoice & Receipt Generatioon
   - Payment History & Transaction Logs
 
-## 7. **Messaging System:**
+## 7. 💬 **Messaging System:**
   
   **Description:** Facilitate Communication between the Guest and the Hosts.
   
@@ -164,9 +164,9 @@ Handles all financial operations securely between guests, hosts, and the platfor
   - Safe Content Filtering
   - Message Notifications And Read Receipts
   - Conversations History per Booking
-  - Attach Support (Immages, Booking Files)
+  - Attach Support (Images, Booking Files)
 
-## 9. **Review System:**
+## 9. ⭐ **Review System:**
   
   **Description:**
 This enables guests to rate properties and leave written feedback, while hosts can view ratings for quality improvements and also rate the guests. The feature builds trust, transparency and accountability across the platform, helping future guests to make informed choices and encouraging high standards among the hosts.
@@ -177,64 +177,64 @@ This enables guests to rate properties and leave written feedback, while hosts c
   - 1 - 5 Star Rating System
   - Review Visibility (Public & Private Feedback)
   - Review Moderation ( Flagging Inappropriate Content)
-  - Aggregate Propert Rating Calculation
+  - Aggregate Property Rating Calculation
 
-## 6. **Notifications:**
+## 6. 🔔 **Notifications:**
 
   ** Description:**
-To keeps users informed about key updates. To send automated emails and in-app messages for bookings, reminders, payment, and status changes. Clear, timely communication to keep users informed and engaged, minimizing confusion and missed opportunities.
+To keep users informed about key updates. To send automated emails and in-app messages for bookings, reminders, payment, and status changes. Clear, timely communication to keep users informed and engaged, minimizing confusion and missed opportunities.
   
   **Sub features**
   - Email Notifications (Booking Confirmations, Payment Updates)
-  - In-App Alerts (DashBoard Notifications)
+  - In-App Alerts (Dashboard Notifications)
   - Push Notifications (Mobile Web)
   - Notification Preferences (Opt-In/Out per type)
   - Event Logging  for Account Protection Security Tracking
 
-## 7. **Admin and Analytics Dashboard:**
+## 7. 🧠📊 **Admin and Analytics Dashboard:**
 
   **Description:**
-Provides admin-Level full control over users, Properties, Transaction, and reports. It will Provide level Access to manage syetm data to the site activity, Revenue, Bookings, and user issues through a secure dashboard. Admin tools that are essential for the ongoing sites’ health, fraud detection, supporting users’ needs, and compliance.
+Provides admin-level full control over users, Properties, transactions, and reports. It will provide level Access to manage system data to the site activity, Revenue, Bookings, and user issues through a secure dashboard. Admin tools that are essential for the ongoing sites’ health, fraud detection, supporting users’ needs, and compliance.
   
   **Sub features**
   - User Management & Hosts (Suspend / Verify)
   - Property Verification & Approval
   - Fraud Detection & Analytics Logs
   - Perform Analytics (Revenue, Active Users, Bookings)
-  - Dsipute Management
+  - Dispute Management
   - System Configuration (Tax, Commission Rates, etc.)
 
-## 8. **Search & Discovery:**
+## 8. 🔍 **Search & Discovery:**
  
   **Description:**
-Allows guest to find properties using intelligent filters and personalized recommedations.
+Allows guests to find properties using intelligent filters and personalized recommendations.
   
   **Sub features:**
   - Search by Location, Price, Date, Amenities
-  - Auto complete Suggestions
+  - Auto-complete Suggestions
   - Sort By Rating, Price, Popularity, or Distance
   - Map-Based Search Integration
   - Saved Searches& Favorites
-  - Recommendation Egine (Personalized Suggestions)
+  - Recommendation Engine (Personalized Suggestions)
 
-## 9. **Informations & Security:**
+## 9. 🛡🕵️‍♂️ **Informations & Security:**
 
   **Description:**
-Ensure the system is relaible, secure, and scalable under production load.
+Ensure the system is reliable, secure, and scalable under production load.
   
   **Sub features:**
-  - API Gateway & Rat Limiting
+  - API Gateway & Rate Limiting
   - Data Encryption (AES-256, HTTPS/TLS)
-  - Logging and Monitoring (ELK/Promethus/Grafana)
+  - Logging and Monitoring (ELK/Prometheus/Grafana)
   - Caching (Redis) for speed optimization
   - Load Balancing and Auto scaling
   - CI/CD Pipeline (GitHub Actions, Docker, Kubernetes)
   - Backup & Dissater Recovery
 
-## 10. Analytics and Insights:
+## 10. 📊 Analytics and Insights:
   
   **Description:**
-Track users behavior, booking trends, and performance matrics for growth.
+Track users' behavior, booking trends, and performance metrics for growth.
 
   **Sub features:**
   - Revenue Reports
@@ -244,9 +244,9 @@ Track users behavior, booking trends, and performance matrics for growth.
   - Conversion Funnel Tracking
   - Admin Data Dashboards
 
-## 11. Customer Support 
+## 11. 🧰 Customer Support 
 
-  **Dsecription:**
+  **Description:**
 Support Issue resolution between guests, hosts, and admins.
 
   **Sub features:**
@@ -254,9 +254,9 @@ Support Issue resolution between guests, hosts, and admins.
   - Live Chat integration
   - FAQ / Help Center
   - Escalation Workflow (Tier 1 - Tier 2 - Admin)
-  - Spport Dasboard Analytics.
+  - Support Dashboard Analytics.
 
-# Each of the feature works together to provide a secure, seamless, and responsive experience for all users on this platform.
+# Each of the features works together to provide a secure, seamless, and responsive experience for all users on this platform.
 
 ----
 
