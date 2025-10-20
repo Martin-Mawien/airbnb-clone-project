@@ -267,8 +267,7 @@ Support Issue resolution between guests, hosts, and admins.
    - **REST API**: Detailed documentation available through the OpenAPI standard, including endpoints for users, properties, bookings, and payments.
    - **Django REST Framework:** Provides a comprehensive RESTful API for handling CRUD operations on user and property data.
    - **GraphQL API**: Provides a flexible query language for retrieving and manipulating data.
-   - 
--
+
 **Key Security Measures**
 
    - **Authentication**:
