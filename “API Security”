@@ -1,0 +1,40 @@
+
+# 5. 📈 API Security
+
+**API Security** This section outlines the crucial security measures implemented for the Airbnb-clone-project backend. It explains their importance in protecting user data, securing financial transactions, and maintaining system trustworthiness.
+
+   - **REST API**: Detailed documentation available through the OpenAPI standard, including endpoints for users, properties, bookings, and payments.
+   - **Django REST Framework:** Provides a comprehensive RESTful API for handling CRUD operations on user and property data.
+   - **GraphQL API**: Provides a flexible query language for retrieving and manipulating data.
+
+**Key Security Measures**
+
+   - **Authentication**:
+     Enforces strict verification of user identity using robust methods (JWT tokens, OAuth2, or session-based auth). All sensitive API endpoints require authentication to prevent unauthorized access.
+
+   - **Authorization**:
+     Limits access so users can only interact with their own data (e.g., bookings, payments, reviews); admin-level endpoints require higher permissions.
+     Object-level and role-based checks prevent data exposure across accounts.
+
+   - **Rate Limiting**:
+     Applies request throttling on high-value endpoints like login, booking, and payments.
+     Prevents brute-force attacks, API abuse, and Denial-of-Service (DoS).
+
+   - **Input Validation & Sanitization**:
+     All API parameters and request bodies are validated and sanitized to prevent injection attacks and malicious inputs.
+
+   - **HTTPS Enforcement**:
+     All traffic between clients and the server is encrypted to defend against eavesdropping and man-in-the-middle attacks.
+
+   - **Audit Logging & Monitoring**:
+     Auth events, payment transactions, and admin actions are logged and monitored for suspicious behavior.
+
+----
+
+# 6. CI/CD Pipeline
+**A CI/CD pipeline** integration and continuous deployment pipeline is a series of automated processes that enables the team to build and deploy code efficiently and reliably. The integration of codes changes automatically, runs tests, and deploys applications without manual intervention. The automation will speed development and reduce errors, and maintain the highest quality throughout the lifecycle of software.
+   - **Consistency**:
+     To automate testing and deployment, ensure each code change is tested the same way, and minimize manual errors.
+   - **Speed**:
+     For rapid builds and tests to accelerate the feature delivery, fixes the bug, and enhancements, faster releases allow quick feedback.
+----
