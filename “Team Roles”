@@ -1,0 +1,41 @@
+## 👥 Team Roles
+
+<details>
+<summary><strong>Backend Developer</strong></summary>
+
+- Architect and implement RESTful APIs  
+- Design scalable database schemas  
+- Develop core business logic and integrations  
+- Maintain code quality and best practices  
+
+</details>
+
+<details>
+<summary><strong>Database Administrator (DBA)</strong></summary>
+
+- Design and optimize database structures  
+- Implement indexing and query tuning  
+- Manage backups, recovery, and data integrity  
+- Ensure high availability of data systems  
+
+</details>
+
+<details>
+<summary><strong>DevOps Engineer</strong></summary>
+
+- Build and maintain CI/CD pipelines  
+- Monitor infrastructure and system health  
+- Implement autoscaling and cloud orchestration  
+- Ensure secure and stable backend operations  
+
+</details>
+
+<details>
+<summary><strong>QA Engineer</strong></summary>
+
+- Develop and execute test plans  
+- Validate backend performance and reliability  
+- Identify and track defects  
+- Ensure releases meet quality standards  
+
+</details>
