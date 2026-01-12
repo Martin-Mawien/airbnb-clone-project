@@ -224,10 +224,10 @@ Manage reservations, Scheduling, and availability in real-time. Allow users to b
   - Create Booking Request
   - Availability Check Real-Time
   - Host Approval workflow (Instant or Manual Booking)
-  - Booking Confirmation & Chec-n/Check-out Flow
+  - Booking Confirmation & Check-in/Check-out Flow
   - Cancellation Policy (Flexible, Moderate, Strict)
   - Modify / Reschedule Booking
-  - Booking History &b Status Tracking
+  - Booking History & Status Tracking
   - Guest Count & Duration Validation
 
 ## 5. 💳 **Payment Gateway Integration:**
@@ -239,10 +239,10 @@ Handles all financial operations securely between guests, hosts, and the platfor
   - Payment Gateway Integration (PayPal / Stripe / M-Pesa API)
   - Multi-Currency & Tax Support
   - Secure Payment Processing (PCI Compliance)
-  - Split Payments (Host + Platform Cpmmission)
+  - Split Payments (Host + Platform Commission)
   - Refund & Dispute Resolution
   - Host Payouts (Scheduled Earnings)
-  - Invoice & Receipt Generatioon
+  - Invoice & Receipt Generation
   - Payment History & Transaction Logs
 
 ## 7. 💬 **Messaging System:**
@@ -319,7 +319,7 @@ Ensure the system is reliable, secure, and scalable under production load.
   - Caching (Redis) for speed optimization
   - Load Balancing and Auto scaling
   - CI/CD Pipeline (GitHub Actions, Docker, Kubernetes)
-  - Backup & Dissater Recovery
+  - Backup & Disaster Recovery
 
 ## 10. 📊 Analytics and Insights:
   
@@ -329,7 +329,7 @@ Track users' behavior, booking trends, and performance metrics for growth.
   **Sub features:**
   - Revenue Reports
   - Booking Trends by Region
-  - User Returntion Matrics
+  - User Retention Metrics
   - Property Performance (Occupancy, Ratings)
   - Conversion Funnel Tracking
   - Admin Data Dashboards
