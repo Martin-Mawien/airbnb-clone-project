@@ -66,29 +66,29 @@ The **Airbnb Clone** is a scalable, secure backend solution designed to power a 
 This Airbnb Clone is built using a modern, scalable backend architecture designed for performance, modularity, and clean API communication.
 
 ### 🧩 Backend Framework
-- **Django** — Core backend framework powering authentication, ORM, admin dashboard, and server‑side logic.
-- **Django REST Framework (DRF)** — Provides clean, maintainable RESTful API endpoints with serialization, permissions, and pagination.
+- **Django** - Core backend framework powering authentication, ORM, admin dashboard, and server-side logic.
+- **Django REST Framework (DRF)** - Provides clean, maintainable RESTful API endpoints with serialization, permissions, and pagination.
 
 ### 🗄️ Database Layer
-- **PostgreSQL** — Reliable, ACID‑compliant relational database used for storing listings, bookings, users, and transactions.
+- **PostgreSQL** - Reliable, ACID-compliant relational database used for storing listings, bookings, users, and transactions.
 
 ### 🔍 API Query Language
-- **GraphQL** — Enables flexible, client‑driven data fetching for optimized frontend performance.
+- **GraphQL** - Enables flexible, client-driven data fetching for optimized frontend performance.
 
 ### ⚡ Asynchronous Processing
-- **Celery** — Handles background tasks such as sending booking notifications, processing payments, and scheduled jobs.
-- **Redis** — In‑memory data store used for caching, session management, and as Celery's message broker.
+- **Celery** - Handles background tasks such as sending booking notifications, processing payments, and scheduled jobs.
+- **Redis** - In-memory data store used for caching, session management, and as Celery's message broker.
 
 ### 📦 Containerization & Deployment
-- **Docker** — Ensures consistent development and production environments.
-- **Docker Compose** — Orchestrates multi‑service setup (web, database, redis, celery).
+- **Docker** - Ensures consistent development and production environments.
+- **Docker Compose** - Orchestrates multi-service setup (web, database, redis, celery).
 
 ### 🔁 DevOps & Automation
-- **CI/CD Pipelines** — Automated workflows for testing, building, and deploying updates to the project.
+- **CI/CD Pipelines** - Automated workflows for testing, building, and deploying updates to the project.
 
 ### 🛠️ Additional Tools
-- **Gunicorn** — Production WSGI server for running Django.
-- **CORS Headers** — Enables secure communication between backend and frontend clients.
+- **Gunicorn** - Production WSGI server for running Django.
+- **CORS Headers** - Enables secure communication between backend and frontend clients.
 
 ----
 
