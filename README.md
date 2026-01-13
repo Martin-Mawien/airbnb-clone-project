@@ -18,76 +18,167 @@ The **Airbnb Clone** is a scalable, secure backend solution designed to power a 
 ----
 
 # 1.  👥 **Team Roles**
-  - **Backend Developer**: Responsible for implementing API endpoints, database schemas, and business logic.
-  - **Database Administrator**: Manages database design, indexing, and optimizations.
-  - **DevOps Engineer**: Handles deployment, monitoring, and scaling of the backend services.
-  - **QA Engineer**: Ensures the backend functionalities are thoroughly tested and meet quality standards.
+
+<details>
+<summary><strong>Backend Developer</strong></summary>
+
+- Architect and implement RESTful APIs  
+- Design scalable database schemas  
+- Develop core business logic and integrations  
+- Maintain code quality and best practices  
+
+</details>
+
+<details>
+<summary><strong>Database Administrator (DBA)</strong></summary>
+
+- Design and optimize database structures  
+- Implement indexing and query tuning  
+- Manage backups, recovery, and data integrity  
+- Ensure high availability of data systems  
+
+</details>
+
+<details>
+<summary><strong>DevOps Engineer</strong></summary>
+
+- Build and maintain CI/CD pipelines  
+- Monitor infrastructure and system health  
+- Implement autoscaling and cloud orchestration  
+- Ensure secure and stable backend operations  
+
+</details>
+
+<details>
+<summary><strong>QA Engineer</strong></summary>
+
+- Develop and execute test plans  
+- Validate backend performance and reliability  
+- Identify and track defects  
+- Ensure releases meet quality standards  
+
+</details>
 
 ----
 
 # 2. ⚙️ **Technology Stack Overview**
 
-  - **Django:** Web framework used for building the RESTful API It provides built-in components for user authentication, database management, and templating.
-  - **Django REST Framework:** Provides tools for creating and managing RESTful APIs by providing serialization, authentication, viewsets, and pagination out of the box, allowing clean and maintainable API endpoints.
-  - **PostgreSQL:** A powerful relational database used for data storage.
-  - **GraphQL:** Allows for flexible and efficient querying of data.
-  - **Celery:** For handling asynchronous tasks such as sending notifications or processing payments.
-  - **Redis:** Used for caching and session management.
-  - **Docker:** A Containerization tool for consistent development and deployment environments.
-  - **CI/CD Pipelines:** Automated pipelines for testing and deploying code changes.
+This Airbnb Clone is built using a modern, scalable backend architecture designed for performance, modularity, and clean API communication.
+
+### 🧩 Backend Framework
+- **Django** - Core backend framework powering authentication, ORM, admin dashboard, and server-side logic.
+- **Django REST Framework (DRF)** - Provides clean, maintainable RESTful API endpoints with serialization, permissions, and pagination.
+
+### 🗄️ Database Layer
+- **PostgreSQL** - Reliable, ACID-compliant relational database used for storing listings, bookings, users, and transactions.
+
+### 🔍 API Query Language
+- **GraphQL** - Enables flexible, client-driven data fetching for optimized frontend performance.
+
+### ⚡ Asynchronous Processing
+- **Celery** - Handles background tasks such as sending booking notifications, processing payments, and scheduled jobs.
+- **Redis** - In-memory data store used for caching, session management, and as Celery's message broker.
+
+### 📦 Containerization & Deployment
+- **Docker** - Ensures consistent development and production environments.
+- **Docker Compose** - Orchestrates multi-service setup (web, database, redis, celery).
+
+### 🔁 DevOps & Automation
+- **CI/CD Pipelines** - Automated workflows for testing, building, and deploying updates to the project.
+
+### 🛠️ Additional Tools
+- **Gunicorn** - Production WSGI server for running Django.
+- **CORS Headers** - Enables secure communication between backend and frontend clients.
 
 ----
 
 # 3. 🏗 **Database Design**
 
-Relational database design is essential for managing the platform’s data scalability, functionality, and integrity.
+A relational database structure ensures scalability, data integrity, and efficient management of users, properties, bookings, payments, and reviews.
 
-**The key entities and the key fields**
-  ### 1. Users
-- Id (primary key)
-- Name
-- Email address
-- Role (Host, Admin, Guest)
-- Created_at
-  The relationship: each user can own multiple properties and create multiple bookings.
-  ### 2. Properties
-- Id (primary key)
-- Owner_id (foreign key to users)
-- Title
-- Location
-- Price
-  Relations: Each property is owned by only one user but can have many bookings and reviews.
-  ### 3. Bookings
-- Id (Primary Key)
-- User_id (Foreign Key to Users)
-- Property_id (Foreign Key to Properties)
-- Check_in_date
-- Check_out_date
-- Status (pending, confirmed, canceled)
-  The relationship between each booking is linked to one user and opens one property. A user can make many bookings, and a property can be booked many times.
-  ### 4. Payment
-- Id (primary key)
-- Booking_id (foreign to bookings)
-- Amount
-- Status (Paid, Failed, Refunded)
-- Payment_date
-  The relationship between each payment is linked to the booking. Typically, each booking has one payment record. 
-  ### 5. Reviews
-- Id (primary Key)
-- User_id (foreign key to users)
-- Property_id (foreign to properties)
-- Rating
-- Comment
-  The relationship: the review is written by each user for a property. Multiple users can review a property, and users can leave multiple reviews for different properties.
+---
 
-  # The list of the relationship entity:
-   - Users: one-to-many. Each user owns many properties.
-   - User-bookings: One-to-many, a user creates many bookings.
-   - Property-bookings: a one-to-many property can book multiple times.
-   - Property reviews: One-to-many. Property can receive reviews from various users.
-   - Booking payments: One-to-one, each booking results in one payment record.
-   They enable comprehensive management of users, properties, bookings, reviews, and payments while ensuring data integrity and supporting the complex queries for platform functionality.
+### 1. Users
+**Fields**
+- id (PK)
+- name
+- email
+- role (Host, Guest, Admin)
+- created_at
 
+**Relationships**
+- One user owns many properties  
+- One user creates many bookings  
+- One user writes many reviews  
+
+---
+
+### 2. Properties
+**Fields**
+- id (PK)
+- owner_id (FK → users)
+- title
+- location
+- price
+
+**Relationships**
+- One property belongs to one user  
+- One property has many bookings  
+- One property has many reviews  
+
+---
+
+### 3. Bookings
+**Fields**
+- id (PK)
+- user_id (FK → users)
+- property_id (FK → properties)
+- check_in_date
+- check_out_date
+- status (pending, confirmed, canceled)
+
+**Relationships**
+- One user → many bookings  
+- One property → many bookings  
+- One booking → one payment  
+
+---
+
+### 4. Payments
+**Fields**
+- id (PK)
+- booking_id (FK → bookings)
+- amount
+- status (Paid, Failed, Refunded)
+- payment_date
+
+**Relationships**
+- One booking → one payment  
+
+---
+
+### 5. Reviews
+**Fields**
+- id (PK)
+- user_id (FK → users)
+- property_id (FK → properties)
+- rating
+- comment
+
+**Relationships**
+- One user → many reviews  
+- One property → many reviews
+
+---
+
+**Summary of Entity Relationships:**
+- Users ↔ Properties: One-to-many (Each user owns many properties)
+- Users ↔ Bookings: One-to-many (A user creates many bookings)
+- Properties ↔ Bookings: One-to-many (A property can be booked multiple times)
+- Properties ↔ Reviews: One-to-many (Property can receive reviews from various users)
+- Bookings ↔ Payments: One-to-one (Each booking results in one payment record)
+
+This design enables comprehensive management of users, properties, bookings, reviews, and payments while ensuring data integrity and supporting complex queries for platform functionality.
 ----
 
 # 4. 🛠️ Feature Breakdown
@@ -133,10 +224,10 @@ Manage reservations, Scheduling, and availability in real-time. Allow users to b
   - Create Booking Request
   - Availability Check Real-Time
   - Host Approval workflow (Instant or Manual Booking)
-  - Booking Confirmation & Chec-n/Check-out Flow
+  - Booking Confirmation & Check-in/Check-out Flow
   - Cancellation Policy (Flexible, Moderate, Strict)
   - Modify / Reschedule Booking
-  - Booking History &b Status Tracking
+  - Booking History & Status Tracking
   - Guest Count & Duration Validation
 
 ## 5. 💳 **Payment Gateway Integration:**
@@ -148,10 +239,10 @@ Handles all financial operations securely between guests, hosts, and the platfor
   - Payment Gateway Integration (PayPal / Stripe / M-Pesa API)
   - Multi-Currency & Tax Support
   - Secure Payment Processing (PCI Compliance)
-  - Split Payments (Host + Platform Cpmmission)
+  - Split Payments (Host + Platform Commission)
   - Refund & Dispute Resolution
   - Host Payouts (Scheduled Earnings)
-  - Invoice & Receipt Generatioon
+  - Invoice & Receipt Generation
   - Payment History & Transaction Logs
 
 ## 7. 💬 **Messaging System:**
@@ -228,7 +319,7 @@ Ensure the system is reliable, secure, and scalable under production load.
   - Caching (Redis) for speed optimization
   - Load Balancing and Auto scaling
   - CI/CD Pipeline (GitHub Actions, Docker, Kubernetes)
-  - Backup & Dissater Recovery
+  - Backup & Disaster Recovery
 
 ## 10. 📊 Analytics and Insights:
   
@@ -238,7 +329,7 @@ Track users' behavior, booking trends, and performance metrics for growth.
   **Sub features:**
   - Revenue Reports
   - Booking Trends by Region
-  - User Returntion Matrics
+  - User Retention Metrics
   - Property Performance (Occupancy, Ratings)
   - Conversion Funnel Tracking
   - Admin Data Dashboards
