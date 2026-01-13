@@ -383,7 +383,7 @@ Support Issue resolution between guests, hosts, and admins.
 ----
 
 # 6. CI/CD Pipeline
-**A CI/CD pipeline** integration and continuous deployment pipeline is a series of automated processes that enable the team to build and deploy code efficiently and reliably. The integration of codes changes automatically, runs tests, and deploys applications without manual intervention. The automation will speed development and reduce errors, and maintain the highest quality throughout the lifecycle of software.
+**A CI/CD pipeline** integration and continuous deployment pipeline is a series of automated processes that enables the team to build and deploy code efficiently and reliably. The integration of codes changes automatically, runs tests, and deploys applications without manual intervention. The automation will speed development and reduce errors, and maintain the highest quality throughout the lifecycle of software.
    - **Consistency**:
      To automate testing and deployment, ensure each code change is tested the same way, and minimize manual errors.
    - **Speed**:
