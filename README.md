@@ -70,7 +70,7 @@ This Airbnb Clone is built using a modern, scalable backend architecture designe
 - **Django REST Framework (DRF)** - Provides clean, maintainable RESTful API endpoints with serialization, permissions, and pagination.
 
 ### 🗄️ Database Layer
-- **PostgreSQL** - Reliable, ACID-compliant relational database used for storing listings, bookings, users, and transactions.
+- **MYSQL** - Reliable, ACID-compliant relational database used for storing listings, bookings, users, and transactions.
 
 ### 🔍 API Query Language
 - **GraphQL** - Enables flexible, client-driven data fetching for optimized frontend performance.
