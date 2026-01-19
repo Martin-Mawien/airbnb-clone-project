@@ -13,27 +13,22 @@ The **Airbnb Clone** is a scalable, secure backend solution designed to power a 
 <details>
 <summary><b>01. user management</b></summary
 Implement a secure system for user registration, authentication, and profile management.
-<details>
 
 <details>
 <summary><b>02. property management</b></summary><br>
 Develop features for property listing creation, updates, and retrieval.
-<details>
    
 <details>
 <summary><b>03. booking system</b></summary>
 Create a booking mechanism for users to reserve properties and manage booking details.
-<details>
 
 <details>
 <summary><b>04. Payment Processing</b></summary><br>
 Integrate a payment system to handle transactions and record payment details.
-<details>
 
 <details>
 <summary><b>05. Review System</b></summary>
 Allow users to leave reviews and ratings for properties.
-<details>
 
 <details>
 <summary><b>06. Data Optimization</b></summary><br>
