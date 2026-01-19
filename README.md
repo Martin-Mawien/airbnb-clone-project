@@ -7,32 +7,28 @@
 The **Airbnb Clone** is a scalable, secure backend solution designed to power a comprehensive property rental and booking platform inspired by **Airbnb**. Built with **Django** and **Django REST Framework**, **PostgreSQL**, it provides **RESTful** and **GraphQL APIs**, as well as **Celery** and **Redis**, **Docker**, and **CI/CD Pipelines** for managing users, properties, bookings, payments, and reviews.  
 
 ------
+
 # **🏆 Project Goals**
 
-**User Management** 
-<details>
-<summary><b>01. user management</b></summary
-   Implement a secure system for user registration, authentication, and profile management.
-   
-<details>
-<summary><b>02. property management</b></summary><br>
-   Develop features for property listing creation, updates, and retrieval.
- 
-<details>
-<summary><b>03. booking system</b></summary>
-   Create a booking mechanism for users to reserve properties and manage booking details.
+------
 
-<details>
-<summary><b>04. Payment Processing</b></summary><br>
-   Integrate a payment system to handle transactions and record payment details.
+* **01. User Management**: 
+  * Implement a secure system for user registration, authentication, and profile management.
 
-<details>
-<summary><b>05. Review System</b></summary>
-   Allow users to leave reviews and ratings for properties.
+* **02. property management**:
+  * Develop features for property listing creation, updates, and retrieval.
 
-<details>
-<summary><b>06. Data Optimization</b></summary><br>
-   Ensure efficient data retrieval and storage through database optimizations.
+* **03. booking system**:
+  * Create a booking mechanism for users to reserve properties and manage booking details.
+
+* **04. Payment Processing**:
+  * Integrate a payment system to handle transactions and record payment details.
+
+* **05. Review System**:
+  * Allow users to leave reviews and ratings for properties.
+
+* **06. Data Optimization**:
+  * Ensure efficient data retrieval and storage through database optimizations.
 ----
 
 # 1.  👥 **Team Roles**
